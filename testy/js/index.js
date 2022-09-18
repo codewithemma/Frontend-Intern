@@ -14,11 +14,11 @@ function fileInfo() {
     return bytes.toFixed(2) + units[i];
   };
   tbody.innerHTML += `  <tr>
-  <td>File Name: ${fileName.basename(pth, extension)}</td>
+  <td>File Name: ${fileName}</td>
   <td>File Size: ${fileSize.formatBytes()}</td>
   <td><button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title=" Name:${fileName}; Ext: ${fileName
     .split(".")
-    .pop()}; Size: ${fileSize}">
+    .pop()}; Size: ${fileSize}.formatBytes()">
   File Info
 </button></td>
 </tr>`;
