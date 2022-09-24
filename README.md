@@ -1,1 +1,1 @@
-# Frontend-Intern
+# Javascript Application
